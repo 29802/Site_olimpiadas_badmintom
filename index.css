@@ -299,6 +299,195 @@ header{
 
 }
 
+.rank{
+    background-color: var(--color3);
+}
+
+.title_rank{
+    background-color: var(--color8);
+    align-items: center;
+    font-size: 1.0rem;
+    color: var(--color0);
+    letter-spacing: 1px;
+    padding-top: 30px;
+    padding-left: 680px;
+}
+
+.navbar_rank{
+    display:flex;
+    background-color: var(--color3);
+    width: 100%;
+    height: 100px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.navbar_rank a{
+    padding: 17px;
+    color: var(--color1);
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: 0.1s;
+}
+
+.navbar_rank a:hover{
+    background: var(--color5);
+    border-radius: 0.2rem;
+    transition: 0.2s all linear;
+
+}
+
+.img_rank img{
+    width: 100%;
+    padding: 30px;
+
+}
+
+
+.review{
+    width: 100%;
+    height: 100vh;
+    padding: 70px 0;
+}
+
+.review h1{
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.review h1 span{
+    margin-left: 15px;
+    color: var(--color0);
+    font-family: mv boli;
+}
+
+.review h1 span::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background:var(--);
+    position: relative;
+    bottom: 15px;
+    display: block;
+}
+
+.review .review_box{
+    width: 95%;
+    margin: 70px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2px;
+}
+
+.review .review_box .review_card{
+    width: 350px;
+    height: 535px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    background-color: var(--color2);
+    border-radius: 8px;
+    padding: 8px 20px;
+    margin: 0 8px;
+}
+
+.review .review_box .review_card .review_profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: 0.3s;
+}
+
+.review .review_box .review_card:hover .review_profile{
+    transform: translateY(-60px);
+}
+
+.review .review_box .review_card .review_profile img{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    border: 5px solid #cccccc;
+}
+
+.review .review_box .review_card .review_text{
+    text-align: center;
+}
+
+.review .review_box .review_card .review_text .name{
+    color: #000;
+    transition: 0.3s;
+}
+
+.review .review_box .review_card:hover .review_text .name{
+    transform: translateY(-50px);
+}
+
+.review .review_box .review_card .review_text .review_icon{
+    color: #fac031;
+    transition: 0.5s;
+}
+
+.review .review_box .review_card:hover .review_text .review_icon{
+    transform: translateY(-30px);
+}
+
+.review .review_box .review_card .review_text .review_social i{
+    margin: 5px 1px;
+    font-size: 15px;
+    opacity: 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.review .review_box .review_card:hover .review_text .review_social i{
+    opacity: 1;
+    transform: translateY(-8px);
+}
+
+.review .review_box .review_card .review_text p{
+    text-align: center;
+    line-height: 22px;
+    transition: 0.3s;
+}
+
+.review .review_box .review_card:hover .review_text p{
+    margin-top: 5px;
+}
+
+.com h2{
+    margin-top: 80px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.com h2 span{
+    margin-left: 15px;
+    color: var(--color0);
+    font-family: mv boli;
+}
+
+.review_write{
+    width: 40%;
+    height: 100px;
+    margin-top: 20px;
+    margin-left: 450px;
+    background-color: #D9D9D9;
+    border-radius: 2%;
+}
+
+.write p{
+    text-align: center;
+    line-height: 22px;
+    transition: 0.3s;
+}
 
 
 
