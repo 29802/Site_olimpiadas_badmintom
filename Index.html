@@ -1,22 +1,13 @@
-<?php
-session_start();
-if (!isset($_SESSION["user"])) {
-   header("Location: login.php");
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badmintom.com.br</title>
     <link rel="stylesheet" href="index.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Badmintom.com</title>
-</head>
 </head>
 <body>
-    <!-- Header -->
     <header>
         <div class="header1">
             <a href="#" class="logo">
@@ -27,9 +18,6 @@ if (!isset($_SESSION["user"])) {
         </a>
     </div>
 </header>
-<!-- ------------------------------------------------------------- -->
-
-<!-- Header 2 -->
 <div class="header2">
     <ul class="navbar">
         <i class='bx bxs-user' style='color:#080808' ></i>
@@ -40,12 +28,9 @@ if (!isset($_SESSION["user"])) {
             <li><a href="index.html #customers">Avaliações</a></li>
         </ul>
 </div>
-
 <section class="home" id="home">
 </section>
-<!-- ----------------------------------------------------- -->
 
-<!-- Modalidades/esporte -->
 <section class="about">
     <div class="text">
         <h2>
@@ -57,8 +42,7 @@ if (!isset($_SESSION["user"])) {
     </div>
 </section>
 
-<!-- Esporte -->
-<div class="esporte">
+    <div class="esporte">
         <div class="mod_card1">
             <a href="#"></a> 
 
@@ -102,10 +86,7 @@ if (!isset($_SESSION["user"])) {
     <div class="mod_title">
         <h1>Modalidades</h1>
     </div>
-
-    <!-- Modalidades -->
-
-    <div class="modalidades">
+        <div class="modalidades">
             <div class="card">
                 <a href="#"></a>
 
@@ -143,9 +124,7 @@ if (!isset($_SESSION["user"])) {
             </div>
             
         </div>
-<!-- ------------------------------------------------------------- -->
-<!-- Rank -->
-<div class="title_rank">
+        <div class="title_rank">
             <h1>Ranking</h1>
         </div>
         <br>
@@ -163,9 +142,8 @@ if (!isset($_SESSION["user"])) {
             <div class="img_rank">
                 <a href=""><img src="./Badmintom/Img.menu/image (4).png" alt=""></a>
             </div>
-<!-- --------------------------------------------------------------- -->
-<!-- Espaço -->
-<div class="text">
+
+            <div class="text">
                 <h2>
                     Características do espaço
                 </h2>
@@ -174,10 +152,10 @@ if (!isset($_SESSION["user"])) {
                 <img src="./Badmintom/Img.menu/Captura_de_tela_2024-08-24_152700-removebg-preview 1 (1).png" alt="" width="40%">
                 <img src="./Badmintom/Img.menu/image 23.png" alt="" width="40%">
             </div>
-<!-- -------------------------------------------------------- -->
- <!--Noticias-->
 
- <div class="Combo" id="Combo">
+            <!--Combo-->
+
+<div class="Combo" id="Combo">
     <h1>Noticias</h1>
 
     <div class="Combo_image_box">
@@ -221,25 +199,20 @@ if (!isset($_SESSION["user"])) {
             </p>
             <a href="#Pedido" class="Combo_btn">Pedir agora</a>
         </div>
+
+       
+       
+    </div>
+
+</div>
+    <div class="patrocinio">
+        <img src="./Badmintom/Img.menu/image 8.png" alt="">
+        <img src="./Badmintom/Img.menu/image 12.png" alt="">
+        <img src="./Badmintom/Img.menu/image 9.png" alt="" class="img1">
+        <img src="./Badmintom/Img.menu/image 11.png" alt="">
+        <img src="./Badmintom/Img.menu/image 10.png" alt="">
+        <img src="./Badmintom/Img.menu/image 13.png" alt="" class="img2">
     </div>
 </div>
-<!-- ---------------------------------------------------------------- -->
-<!-- Patrocinio -->
-
-
-
-<div class="patrocinio">
-    <img src="./Badmintom/Img.menu/image 8.png" alt="">
-    <img src="./Badmintom/Img.menu/image 12.png" alt="">
-    <img src="./Badmintom/Img.menu/image 9.png" alt="" class="img1">
-    <img src="./Badmintom/Img.menu/image 11.png" alt="">
-    <img src="./Badmintom/Img.menu/image 10.png" alt="">
-    <img src="./Badmintom/Img.menu/image 13.png" alt="" class="img2">
-</div>
-</div>
-<div class="container">
-        <h1>Welcome!</h1>
-        <a href="logout.php" class="btn btn-warning">Logout</a>
-    </div>
 </body>
 </html>
