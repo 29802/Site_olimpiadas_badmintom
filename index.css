@@ -65,7 +65,6 @@ header{
 }
 
 
-
 .navbar{
     display:flex;
     background-color: var(--color5);
@@ -103,6 +102,7 @@ header{
 .home{
     width: 100%;
     min-height: 100vh;
+    opacity: 1;
     background: url(./Badmintom/Img.menu/image\ fundo.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -145,19 +145,17 @@ header{
     justify-content: center;
     align-items: center;
     padding: 20px;
-    margin-bottom: -90px;
+    margin-bottom: -110px;
    
 
 }
 
 .about .text h2{
-    align-items: center;
+    text-align: center;
     font-size: 1.4rem;
     color: var(--color0);
     text-transform: uppercase;
-    letter-spacing: 1px;
     margin-top: 150px;
-    padding-left: 250px;
 }
 
 .about .text p{
@@ -347,147 +345,150 @@ header{
 
 }
 
-
-.review{
+.medidas{
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+
+
+.text h2{
+    background-color: var(--color8);
+    text-align: center;
+    font-size: 1.9rem;
+    color: var(--color0);
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+/* ----------------------------------------------------------------------------- */
+/*Combo*/
+
+.Combo{
+    width: 100%;
     padding: 70px 0;
+    margin-top: -90px;
 }
 
-.review h1{
-    font-size: 55px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.review h1 span{
-    margin-left: 15px;
+.Combo h1{
+    background-color: var(--color8);
+    text-align: center;
+    font-size: 1.9rem;
     color: var(--color0);
-    font-family: mv boli;
+    padding-top: 30px;
+    padding-left: 20px;
 }
 
-.review h1 span::after{
-    content: '';
-    width: 100%;
-    height: 2px;
-    background:var(--);
-    position: relative;
-    bottom: 15px;
-    display: block;
-}
 
-.review .review_box{
-    width: 95%;
-    margin: 70px auto;
+
+.Combo .Combo_image_box{
+    width: 85%;
+    margin: 10px auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 2px;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
 }
 
-.review .review_box .review_card{
-    width: 350px;
-    height: 535px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
-    background-color: var(--color2);
-    border-radius: 8px;
-    padding: 8px 20px;
-    margin: 0 8px;
-}
-
-.review .review_box .review_card .review_profile{
+.Combo .Combo_image_box .Combo_image{
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    transition: 0.3s;
+    background: black;
 }
 
-.review .review_box .review_card:hover .review_profile{
-    transform: translateY(-60px);
+.Combo .Combo_image_box .Combo_image img{
+    width: 100%;
+    transition: .3s;
 }
 
-.review .review_box .review_card .review_profile img{
-    width: 180px;
-    height: 180px;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 50%;
-    border: 5px solid #cccccc;
+.Combo .Combo_image_box .Combo_image:hover img{
+    opacity: 0.4;
 }
 
-.review .review_box .review_card .review_text{
-    text-align: center;
-}
-
-.review .review_box .review_card .review_text .name{
-    color: #000;
-    transition: 0.3s;
-}
-
-.review .review_box .review_card:hover .review_text .name{
-    transform: translateY(-50px);
-}
-
-.review .review_box .review_card .review_text .review_icon{
-    color: #fac031;
-    transition: 0.5s;
-}
-
-.review .review_box .review_card:hover .review_text .review_icon{
-    transform: translateY(-30px);
-}
-
-.review .review_box .review_card .review_text .review_social i{
-    margin: 5px 1px;
-    font-size: 15px;
+.Combo .Combo_image_box .Combo_image h3{
+    position: absolute;
+    font-size: 35px;
+    margin-bottom: 130px;
+    color: var(--border);
+    font-family: polo;
+    z-index: 5;
     opacity: 0;
-    cursor: pointer;
     transition: 0.3s;
 }
 
-.review .review_box .review_card:hover .review_text .review_social i{
+.Combo .Combo_image_box .Combo_image:hover h3{
     opacity: 1;
-    transform: translateY(-8px);
 }
 
-.review .review_box .review_card .review_text p{
+.Combo .Combo_image_box .Combo_image p{
+    position: absolute;
+    width: 400px;
+    margin-top: 30px;
     text-align: center;
+    color: white;
     line-height: 22px;
+    opacity: 0;
+    z-index: 5;
     transition: 0.3s;
 }
 
-.review .review_box .review_card:hover .review_text p{
-    margin-top: 5px;
+.Combo .Combo_image_box .Combo_image:hover p{
+    opacity: 1;
 }
 
-.com h2{
-    margin-top: 80px;
-    font-size: 25px;
-    display: flex;
+.Combo .Combo_image_box .Combo_image .Combo_btn{
+    position: absolute;
+    margin-top: 180px;
+    color: #000;
+    background: var(--border);
+    padding: 7px 25px;
+    text-decoration: none;
+    opacity: 0;
+    /* Aplica uma transformação ao elemento, movendo-o verticalmente para baixo em 45 pixels. */
+    transform: translateY(45px);
+    z-index: 5;
+    transition: 0.3s;
+}
+
+.Combo .Combo_image_box .Combo_image:hover .Combo_btn{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.patrocinio{
+    width: 85%;
     align-items: center;
-    justify-content: center;
+    background-color: #EEEEEE;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1px;
 }
 
-.com h2 span{
-    margin-left: 15px;
-    color: var(--color0);
-    font-family: mv boli;
+.patrocinio img{
+    margin-left: 100px;
+    padding: 5%;
+    width: 100%;
+    height: 85%;
+   
 }
 
-.review_write{
-    width: 40%;
-    height: 100px;
-    margin-top: 20px;
-    margin-left: 450px;
-    background-color: #D9D9D9;
-    border-radius: 2%;
+.patrocinio .img1{
+    margin-left: 150px;
+    width: 45%;
+    height: 55%;
+   
 }
 
-.write p{
-    text-align: center;
-    line-height: 22px;
-    transition: 0.3s;
+.patrocinio .img2{
+    margin-left: 150px;
+    width: 45%;
+    height: 55%;
+   
 }
 
 
